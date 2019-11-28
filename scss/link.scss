@@ -1,0 +1,194 @@
+@import "Ginkgo";
+@import "minix";
+
+#link {
+    padding: 30px 0;
+    position: relative;
+    .link-title {
+        padding: 0 60px;
+
+        h2 {
+            position: relative;
+            margin: 0;
+            font-size: 30px;
+
+            @include range-width (0, 769px) {
+                font-size: 24px;
+            }
+
+            &:after {
+                content: "";
+                background-image: url("../img/diamond.png");
+                height: 13px;
+                margin: 5px auto;
+                position: absolute;
+                    top: 40px;
+                    left: calc(50% - 34px);
+                width: 68px;
+
+                @include range-width (320px, 768px) {
+                    margin: 5px 0;
+                    position: absolute;
+                        top: 30px;
+                        left: calc(50% - 34px);
+                }
+            }
+
+            span {
+                color: #db0f2b;
+            }
+        }
+
+        h6 {
+            color:#383f46;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+            padding-top: 20px;
+
+            @include range-width (320px, 768px) {
+                font-size: 13px;
+            }
+        }
+
+        .diamond {
+            @include diamond-center;
+        }
+    }
+
+    .link-box {
+        display: flex;
+        padding: 0 60px;
+        margin-top: 30px;
+
+        @include range-width (320px, 768px) {
+            flex-direction: column;
+            padding: 0 15px;
+        }
+
+        .link-flex {
+            flex-basis: (100% / 3);
+
+            &:nth-child(2) {
+                margin: 0 20px;
+
+                @include range-width (320px, 768px) {
+                    margin: 15px 0;
+                }
+
+            }
+
+            &:nth-child(3) {
+                border: none;
+            }
+
+            .fb-page {
+                width: 100%;
+            }
+            
+            .link-logo-box {
+                
+                .link-name {
+                    text-align: left;
+                }
+                .link-logo {
+                    background-color: #ffffff;
+                    border: 2px solid #eff3f2;
+                    margin: 0 auto;
+                    padding: 20px;
+                    position: relative;
+                    text-align: left;
+                    width: 100%;
+                    @include border-radius(5px);
+
+                    &:after {
+                        content: '\25BA';
+                        position: absolute;
+                        top: calc(50% - 12px);
+                        right: 20px;
+                        text-align: center;
+                        width: 25px;
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 12px;
+                        color: #ffffff;
+                        background-color: #cd9566;
+                        @include border-radius(50%);
+                    }
+                }
+
+                .link-text {
+                    color:#323232;
+                    display: inline-block;
+                    font-size: 13px;
+                    letter-spacing:1px;
+                    line-height:16px;
+                    padding-left: 20px;
+                    text-align:left;
+                }
+            }
+
+            
+        }
+    }
+
+    .sec_skew_r {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: rgb(245, 237, 222);
+        z-index: -1;
+        transform: skewY(-10deg);
+        transform-origin: right top;
+    }
+}
+
+footer {
+    font-size: 13px;
+    margin: 60px 0;
+    position: relative;
+
+    
+
+    .footer {
+        padding: 20px 60px;
+        margin: 150px 0 60px 0;
+        position: relative;
+
+        @include range-width (320px, 768px) {
+            padding: 10px 15px;
+            margin: 0 15px;
+        }
+
+        &:before, &:after {
+            content: "";
+            color: #efdfd0;
+            width: 100%;
+            border-radius: 20px;
+            position: absolute;
+            left: 0;
+
+        }
+    
+        &:before {
+            top: 0;
+            border-top: 4px solid #efdfd0;
+
+            @include range-width (320px, 768px) {
+                border-top: 4px solid #cc9564;
+            }
+        }
+    
+        &:after {
+            bottom: 0;
+            border-bottom: 4px solid #efdfd0;
+
+            @include range-width (320px, 768px) {
+                border-bottom: 4px solid #cc9564;
+            }
+        }
+    }
+    
+}

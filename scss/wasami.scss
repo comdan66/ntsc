@@ -1,0 +1,203 @@
+@import "Ginkgo";
+@import "minix";
+
+#wasami {
+    position: relative;
+
+    @include range-width (320px, 768px) {
+        padding-bottom: 60px;
+    }
+
+    .wasami-title {
+        color: #0f1820;;
+        display: inline-block;
+        // padding-left: 20px;
+        position: absolute;
+            left: 50%;
+            top: 75px;
+        text-align: left;
+
+
+        @include range-width (320px, 768px) {
+            margin: 0 auto;
+            padding: 30px 15px;
+            position: relative;
+                top: unset;
+                left: unset;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 0;
+            position: relative;
+
+            @include range-width (320px, 768px) {
+                font-size: 24px;
+                text-align: center;
+            }
+            
+            &:after {
+                content: "";
+                background-image: url("../img/diamond.png");
+                height: 13px;
+                margin: 5px auto;
+                position: absolute;
+                    top: 40px;
+                    left: 0;
+                width: 68px;
+
+                @include range-width (320px, 768px) {
+                    margin: 5px 0;
+                    position: absolute;
+                        top: 30px;
+                        left: calc(50% - 34px);
+                }
+            }
+
+            span {
+                color: #db0f2b;
+            }
+        }
+
+        h6 {
+            color:#383f46;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+            padding-top: 20px;
+
+            @include range-width (320px, 768px) {
+                
+                text-align: center;
+            }
+        }
+
+        .diamond {
+            @include diamond-left;
+        }
+    }
+
+    .wasami-img {
+        display: flex;
+        padding: 100px 60px;
+
+        @include range-width (320px, 769px) {
+            flex-direction: column;
+            padding: 0 15px;
+        }
+
+        .wasami-img-flex {
+            flex: 1;
+            
+            .wasami-img-box {
+                text-align: left;
+                max-width: 440px;
+                @include range-width (1441px, 0) {
+                    text-align:center;
+                    margin: 0 auto;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .wasami-img-text {
+                flex-basis: 50%;
+                flex-grow: 0;
+                // padding-left: 20px;
+                padding-top: 100px;
+
+                @include range-width (320px, 769px) {
+                    margin-left: 0;
+                    padding: 0;
+                }
+
+                .text {
+                    color: #0f1820;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 25px;
+                    text-align: justify;
+                    text-justify: initial;
+
+                    @include range-width (320px, 769px) {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                }
+                // padding-left: 5px;
+    
+                // .text {
+                //     font-size: 16px;
+                //     font-weight: 300;
+                //     text-align: left;
+                //     line-height: 25px;
+                //     color: #0f1820;
+                // }
+            }
+        }
+    }
+
+    .sec_skew_r {
+        position: absolute;
+        top: 280px;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background-color: rgb(245, 237, 222);
+        z-index: -1;
+        transform: skewY(10deg);
+        transform-origin: right top;
+        @include range-width (320px, 768px) {
+            position: absolute;
+                top: 140px;
+            height: 70%;
+        }
+    }
+
+    .wasami-circle {
+        .circle-1 {
+            width: 40px;
+            height: 40px;
+            background-color: #cc9564;
+            position: absolute;
+            bottom: 45px;
+            right: 120px;
+            @include border-radius(50%); 
+    
+            @include range-width (320px, 768px) {
+                width: 30px;
+                height: 30px;
+                background-color: #cc9564;
+                position: absolute;
+                bottom: 55px;
+                right: 25px;
+            }
+        }
+    
+        .circle-2 {
+            width: 20px;
+            height: 20px;
+            background-color: #f5edde;
+            position: absolute;
+            bottom: 0;
+            right: 165px;
+            @include border-radius(50%); 
+    
+            @include range-width (320px, 768px) {
+                width: 15px;
+                height: 15px;
+                background-color: #f5edde;
+                position: absolute;
+                bottom: 10px;
+                right: 65px;
+            }
+        }
+    }
+
+    
+    
+}

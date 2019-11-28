@@ -1,0 +1,81 @@
+@charset "UTF-8";
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+body { position: relative; top: 0; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: medium; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+body::-moz-selection { color: white; background-color: #78baff; }
+body::selection { color: white; background-color: #78baff; }
+body .main { background-image: url("../img/bg01.jpg"), url("../img/bg02.jpg"); background-repeat: repeat-y; background-position: left, right; background-size: 240px auto, 120px auto; position: relative; top: 0; width: 100%; margin: 0 auto; }
+body .main .diamond { width: 68px; margin: 5px auto; }
+body .main .diamond img { width: 100%; }
+body .main .container { position: relative; height: 5000px; }
+body .main .container .menu { margin: 0 auto; position: fixed; top: 40px; left: 40px; }
+body .main .container .menu .logo { margin-bottom: 80px; }
+body .main .container .menu nav { margin: 0 auto; }
+body .main .container .menu nav ul { padding: 0; list-style: none; }
+body .main .container .menu nav ul li { position: relative; background-color: #f0f0f0; margin: 20px 0; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+body .main .container .menu nav ul li.active a { color: #60381d; }
+body .main .container .menu nav ul li.active a .menu-icon { transform: scale(1.1); background-color: #60381d; }
+body .main .container .menu nav ul li a { margin: 0 auto; display: flex; text-decoration: none; color: #272f36; }
+body .main .container .menu nav ul li a:hover .menu-icon { transform: scale(1.1); background-color: #60381d; }
+body .main .container .menu nav ul li a .menu-icon { width: 50px; height: 50px; line-height: 50px; background-color: #272f36; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; }
+body .main .container .menu nav ul li a .menu-icon i { color: #fff; font-size: 30px; }
+body .main .container .menu nav ul li a .menu-text { line-height: 50px; text-align: left; padding: 0 10px; }
+body .main .container .content { width: calc(100% - 360px); margin-left: 240px; margin-right: 120px; }
+body .main .container .content #about { position: relative; }
+body .main .container .content #about .ant { padding: 60px 60px 30px 60px; position: relative; }
+body .main .container .content #about .ant .title h1 { margin: 0; font-size: 30px; }
+body .main .container .content #about .ant .title h1 span { color: #db0f2b; }
+body .main .container .content #about .ant .title h6 { color: #383f46; font-size: 13px; margin: 0; font-weight: normal; }
+body .main .container .content #about .ant .text { background-image: url("../img/about-bg.png"); background-repeat: repeat-y; margin: 40px auto; padding: 10px 15px; max-width: 630px; font-size: 18px; position: relative; text-align: left; line-height: 30px; }
+body .main .container .content #about .ant .text p { margin: 0; }
+body .main .container .content #about .ant .circle-1 { width: 40px; height: 40px; background-color: #cc9564; position: absolute; top: 40px; right: 120px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body .main .container .content #about .ant .circle-2 { width: 20px; height: 20px; background-color: #f5edde; position: absolute; top: 130px; right: 165px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body .main .container .content #about .csr { position: relative; padding: 0 60px 60px 60px; }
+body .main .container .content #about .csr .title h2 { position: relative; font-size: 26px; padding: 10px 0; }
+body .main .container .content #about .csr .title h2:before, body .main .container .content #about .csr .title h2:after { content: ""; color: #cc9564; width: 20%; border-radius: 20px; position: absolute; left: 40%; }
+body .main .container .content #about .csr .title h2:before { top: 0; border-top: 4px solid #cc9564; }
+body .main .container .content #about .csr .title h2:after { bottom: 0; border-bottom: 4px solid #cc9564; }
+body .main .container .content #about .csr .text { padding: 10px 15px; font-size: 18px; text-align: center; line-height: 30px; }
+body .main .container .content #about .csr .text p { margin: 0; }
+body .main .container .content #about .csr .circle-1 { width: 40px; height: 40px; background-color: #f5edde; position: absolute; top: 110px; left: 140px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body .main .container .content #about .csr .csr-list { display: flex; padding-top: 35px; }
+body .main .container .content #about .csr .csr-list .csr-box { flex: 1; max-width: calc(100% / 3); padding: 0 1rem; }
+body .main .container .content #about .csr .csr-list .csr-box .csr-box-img { position: relative; border: 15px solid #eff3f2; padding: 10px; transition: border-color 1s; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body .main .container .content #about .csr .csr-list .csr-box .csr-box-img .csr-box-img-text { position: absolute; bottom: 3rem; font-size: 22px; color: white; left: calc(50% - 55px); width: 110px; }
+body .main .container .content #about .csr .csr-list .csr-box .csr-box-img .csr-box-img-text p { margin: 0; }
+body .main .container .content #about .csr .csr-list .csr-box .csr-box-text { font-size: 18px; text-align: justify; }
+body .main .container .content #dream { position: relative; }
+body .main .container .content #dream .dream-top { position: relative; }
+body .main .container .content #dream .dream-top .dream-info { padding: 0 30px 0 60px; display: flex; justify-content: space-around; }
+body .main .container .content #dream .dream-top .dream-info .dream-img { flex-basis: 50%; max-width: 493px; position: relative; }
+body .main .container .content #dream .dream-top .dream-info .dream-img img { width: 100%; height: auto; border: 10px solid #fff; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body .main .container .content #dream .dream-top .dream-info .dream-img .dream-img01 { position: relative; width: 100%; }
+body .main .container .content #dream .dream-top .dream-info .dream-img .dream-img02 { position: absolute; right: -50px; top: 70%; }
+body .main .container .content #dream .dream-top .dream-info .dream-img .dream-img03 { position: absolute; left: 50px; top: 95%; }
+body .main .container .content #dream .dream-top .dream-info .dream-img .dream-art-img01 img, body .main .container .content #dream .dream-top .dream-info .dream-img .dream-art-img02 img { border: 0; }
+body .main .container .content #dream .dream-top .dream-info .dream-img .dream-art-img01 { position: absolute; left: 50px; top: 5%; }
+body .main .container .content #dream .dream-top .dream-info .dream-img .dream-art-img02 { position: absolute; left: 40px; top: 95%; }
+body .main .container .content #dream .dream-top .dream-info .dream-content { flex-basis: 50%; flex-grow: 0; margin-left: 15px; padding-left: 40px; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .title { text-align: left; color: #0f1820; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .title h2 { margin: 0; font-size: 30px; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .title h2 span { color: #db0f2b; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .title h6 { color: #383f46; font-size: 13px; margin: 0; font-weight: normal; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .title .diamond { width: 80px; margin: 5px 0; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .title .diamond img { width: 100%; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .text { font-size: 18px; text-align: justify; text-justify: initial; line-height: 30px; color: #0f1820; }
+body .main .container .content #dream .dream-top .dream-info .dream-content .text h3 { font-size: 24px; }
+body .main .container .content #dream .dream-top .dream-cards { position: relative; top: 200px; padding: 0 30px 0 60px; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list { display: flex; justify-content: space-between; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box { flex-basis: calc(25% - 20px); position: relative; padding: 20px; background-color: #ffffff; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box:nth-child(2) { top: -60px; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box:nth-child(3) { top: -120px; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box:nth-child(4) { top: -180px; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box .dream-box-icon { width: 100px; height: 100px; margin: 0 auto; font-size: 40px; color: #934512; border: 5px solid #f5e7cd; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box .dream-box-icon i { position: relative; top: calc(50% - 20px); }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box .dream-box-title { color: #934512; font-size: 24px; }
+body .main .container .content #dream .dream-top .dream-cards .dream-list .dream-box .dream-box-text { font-size: 20px; text-align: justify; }
+body .main .container .content #dream .dream-top .sec_skew_r { position: absolute; top: 105px; left: 0; width: 100%; height: 100%; background-color: #f5edde; z-index: -1; transform: skewY(-10deg); transform-origin: right top; }
+body .main .container .content #dream .dream-bottom { position: relative; top: 122px; }
+body .main .container .content #dream .dream-bottom .title .dream-art-img03 { display: flex; flex-direction: column; align-items: center; position: relative; top: 42px; }
+body .main .container .content #dream .dream-bottom .title .dream-art-img03 img { max-width: 15px; height: auto; }
+body .main .container .content #dream .dream-bottom .title h2 { margin-top: 42px; }

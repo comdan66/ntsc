@@ -1,0 +1,76 @@
+@import "Ginkgo";
+
+@mixin diamond-center {
+    margin: 5px auto;
+    width: 68px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@mixin diamond-left {
+    margin: 5px 0;
+    width: 68px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@mixin circle ($size, $color) {
+    background-color: $color;
+    height: $size;
+    width: $size;
+
+    @include border-radius(50%);
+}
+
+// .ant-intro {
+//     .ant-intro-title {
+//         h1 {
+//             font-size: 30px;
+//             margin: 0;
+//             position: relative;
+
+//             @include range-width (0, 769px) {
+//                 font-size: 24px;
+//             }
+
+//             span {
+//                 color: #db0f2b;
+//             }
+//         }
+
+//         h6 {
+//             color:#383f46;
+//             font-size: 13px;
+//             font-weight: normal;
+//             margin: 0;
+
+//             @include range-width (0, 769px) {
+//                 font-size: 13px;
+//             }
+//         }
+
+//         .diamond {
+//             @include diamond-center;
+//         }
+//     }
+
+//     .ant-intro-text {
+//         background-image: url('../img/about-bg.png');
+//         background-repeat: repeat-y;
+//         font-size: 18px;
+//         line-height: 30px;
+//         margin: 40px auto;
+//         max-width: 630px;
+//         padding: 10px 15px;
+//         position: relative;
+//         text-align: left;
+        
+//         p {
+//             margin: 0;
+//         }
+//     }
+// }

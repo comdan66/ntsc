@@ -1,0 +1,31 @@
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+#wasami { position: relative; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami { padding-bottom: 60px; } }
+#wasami .wasami-title { color: #0f1820; display: inline-block; position: absolute; left: 50%; top: 75px; text-align: left; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .wasami-title { margin: 0 auto; padding: 30px 15px; position: relative; top: unset; left: unset; width: 100%; } }
+#wasami .wasami-title h2 { font-size: 30px; margin: 0; position: relative; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .wasami-title h2 { font-size: 24px; text-align: center; } }
+#wasami .wasami-title h2:after { content: ""; background-image: url("../img/diamond.png"); height: 13px; margin: 5px auto; position: absolute; top: 40px; left: 0; width: 68px; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .wasami-title h2:after { margin: 5px 0; position: absolute; top: 30px; left: calc(50% - 34px); } }
+#wasami .wasami-title h2 span { color: #db0f2b; }
+#wasami .wasami-title h6 { color: #383f46; font-size: 13px; font-weight: normal; margin: 0; padding-top: 20px; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .wasami-title h6 { text-align: center; } }
+#wasami .wasami-title .diamond { margin: 5px 0; width: 68px; }
+#wasami .wasami-title .diamond img { width: 100%; }
+#wasami .wasami-img { display: flex; padding: 100px 60px; }
+@media screen and (max-width: 768px) and (min-width: 320px) { #wasami .wasami-img { flex-direction: column; padding: 0 15px; } }
+#wasami .wasami-img .wasami-img-flex { flex: 1; }
+#wasami .wasami-img .wasami-img-flex .wasami-img-box { text-align: left; max-width: 440px; }
+@media screen and (min-width: 1441px) { #wasami .wasami-img .wasami-img-flex .wasami-img-box { text-align: center; margin: 0 auto; } }
+#wasami .wasami-img .wasami-img-flex .wasami-img-box img { width: 100%; }
+#wasami .wasami-img .wasami-img-flex .wasami-img-text { flex-basis: 50%; flex-grow: 0; padding-top: 100px; }
+@media screen and (max-width: 768px) and (min-width: 320px) { #wasami .wasami-img .wasami-img-flex .wasami-img-text { margin-left: 0; padding: 0; } }
+#wasami .wasami-img .wasami-img-flex .wasami-img-text .text { color: #0f1820; font-size: 16px; font-weight: 300; line-height: 25px; text-align: justify; text-justify: initial; }
+@media screen and (max-width: 768px) and (min-width: 320px) { #wasami .wasami-img .wasami-img-flex .wasami-img-text .text { font-size: 14px; line-height: 20px; } }
+#wasami .sec_skew_r { position: absolute; top: 280px; left: 0; width: 100%; height: 60%; background-color: #f5edde; z-index: -1; transform: skewY(10deg); transform-origin: right top; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .sec_skew_r { position: absolute; top: 140px; height: 70%; } }
+#wasami .wasami-circle .circle-1 { width: 40px; height: 40px; background-color: #cc9564; position: absolute; bottom: 45px; right: 120px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .wasami-circle .circle-1 { width: 30px; height: 30px; background-color: #cc9564; position: absolute; bottom: 55px; right: 25px; } }
+#wasami .wasami-circle .circle-2 { width: 20px; height: 20px; background-color: #f5edde; position: absolute; bottom: 0; right: 165px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #wasami .wasami-circle .circle-2 { width: 15px; height: 15px; background-color: #f5edde; position: absolute; bottom: 10px; right: 65px; } }

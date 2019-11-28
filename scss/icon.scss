@@ -1,0 +1,58 @@
+//
+// @author      OA Wu <comdan66@gmail.com>
+// @copyright   Copyright (c) 2015 - 2019, Ginkgo
+// @license     http://opensource.org/licenses/MIT  MIT License
+// @link        https://www.ioa.tw/
+//
+
+@import "GinkgoFont";
+
+@include font-face("icon", font-files(
+  "../font/icomoon/fonts/icomoon.eot",
+  "../font/icomoon/fonts/icomoon.woff",
+  "../font/icomoon/fonts/icomoon.ttf",
+  "../font/icomoon/fonts/icomoon.svg"));
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+  font-family: "icon";
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.icon-ICONS-3-02:before { content: "\e900"; }
+.icon-ICONS-3-03:before { content: "\e901"; }
+.icon-ICONS-3-04:before { content: "\e902"; }
+.icon-ICONS-3-05:before { content: "\e903"; }
+.icon-ICONS-3-06:before { content: "\e904"; }
+.icon-ICONS-3-07:before { content: "\e905"; }
+.icon-ICONS-3-08:before { content: "\e906"; }
+.icon-ICONS-3-09:before { content: "\e907"; }
+.icon-ICONS-3-10:before { content: "\e908"; }
+.icon-ICONS-3-11:before { content: "\e909"; }
+.icon-ICONS-3-12:before { content: "\e90a"; }
+.icon-ICONS-3-13:before { content: "\e90b"; }
+.icon-ICONS-3-14:before { content: "\e90c"; }
+.icon-ICONS-3-15:before { content: "\e90d"; }
+.icon-ICONS-3-16:before { content: "\e90e"; }
+.icon-ICONS-3-17:before { content: "\e90f"; }
+.icon-ICONS-3-18:before { content: "\e910"; }
+.icon-ICONS-3-19:before { content: "\e911"; }
+.icon-ICONS-3-20:before { content: "\e912"; }
+.icon-ICONS-3-21:before { content: "\e913"; }
+.icon-ICONS-3-22:before { content: "\e914"; }
+.icon-ICONS-3-23:before { content: "\e915"; }
+.icon-arrow-right-alt1:before { content: "\e916"; }
+.icon-zoom-in:before { content: "\e987"; }
+.icon-align-justify:before { content: "\e917"; }
+.icon-arrow-down-left:before { content: "\e918"; }
+.icon-arrow-down-right:before { content: "\e919"; }
+.icon-arrow-down:before { content: "\e91a"; }
+.icon-arrow-left:before { content: "\e91b"; }
+.icon-arrow-right:before { content: "\e91c"; }
+.icon-arrow-up:before { content: "\e91d"; }
+.icon-chevron-down:before { content: "\e91e"; }
+.icon-chevron-left:before { content: "\e91f"; }
+.icon-chevron-right:before { content: "\e920"; }
