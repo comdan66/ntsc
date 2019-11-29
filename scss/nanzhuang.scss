@@ -260,7 +260,7 @@
                     @include range-width (320px, 768px) {
                         height: auto;
                     }
-    
+                    
                     .icon-chevron-left, .icon-chevron-right {
                         position: absolute;
                         color: #fdfdfd;
@@ -295,6 +295,11 @@
                             max-height: 100%;
 
                             @include border-radius(20px);
+
+                            @include range-width (769px) {
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                             
                     }
