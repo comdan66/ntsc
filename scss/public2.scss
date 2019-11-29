@@ -82,7 +82,7 @@ body {
 	
 		.menu {
 			flex-basis: 100% * (2/12);
-			width: 100%;
+			width: 100% * (2/12);
 
 			.web-menu {
 				width: 100% * (2/12);
@@ -103,6 +103,16 @@ body {
 				.nav-list {
 					margin: 0 auto;
 					padding: 0 15%;
+
+					@include range-width(1025px, 1440px) {
+						padding: 10%;
+						font-size: 14px;
+					}
+
+					@include range-width(769px, 1025px) {
+						padding: 2%;
+						font-size: 14px;
+					}
 
 					ul {
 						padding: 0;
@@ -151,8 +161,8 @@ body {
 									@include border-radius(100%); 
 				
 									i {
-									color: #fff;
-									font-size: 30px;
+										color: #fff;
+										font-size: 30px;
 									}
 				
 								}
@@ -174,6 +184,7 @@ body {
 
 			.mobile-menu {
 				display: none;
+				width: 100%;
 				
 				@include range-width(0, 769px) {
 					position: fixed;
@@ -517,10 +528,12 @@ body {
 		}
 
 		.container {
-			flex-basis: 100% * (9/12);
+			flex-basis: calc(100% - (9/12) + 0px);
 			margin-right: 100% * (1/12);
+			width: 75%;
 
 			@include range-width (0, 769px) {
+				width: 100%;
 				margin-top: 85px;
 				margin-right: 0;
 			}

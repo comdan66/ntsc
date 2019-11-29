@@ -198,13 +198,11 @@
                     text-justify: initial;
                 }
 
-                // @include range-width (320px, 769px) {
-                //     font-size: 14px;
-                //     line-height: 20px;
-                //     padding: 10px 0;
-                //     text-align: justify;
-                //     text-justify: initial;
-                // }
+                @include range-width (376px, 769px) {
+                    margin: 0 auto;
+                    max-width: 630px;
+                    text-align: left;
+                }
 
                 p {
                     margin: 0;
@@ -238,7 +236,7 @@
             display: flex;
             padding-top: 35px;
 
-            @include range-width (320px, 769px) {
+            @include range-width (320px, 768px) {
                 flex-direction: column;
             }
 
@@ -249,6 +247,12 @@
                 position: relative;
                 animation-name: fall;
                 animation-duration: 2s;
+
+                @include range-width (320px, 769px) {
+                    margin-bottom: 20px;
+                    max-width: 100%;
+                    padding: 0 ;
+                }
 
                 @keyframes fall{
                     0%{
@@ -286,13 +290,11 @@
                     animation-delay: 2s;
                 }
 
-                @include range-width (320px, 769px) {
-                    margin-bottom: 20px;
-                    max-width: 100%;
-                    padding: 0 ;
-                }
-
                 .csr-box{
+
+                    @include range-width (376px, 769px) {
+                        padding: 0 10px;
+                    }
 
                     .csr-img {
                         border: 15px solid #eff3f2;
@@ -303,7 +305,10 @@
                         @include border-radius(50%); 
 
                         img {
-                            width: 100%;       
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 100%;
                         }
 
                         .csr-img-text {
@@ -314,7 +319,10 @@
                                 left: calc(50% - 55px);
                             width: 110px;
                             
-                            
+                            @include range-width (376px, 768px) {
+                                padding: 0 10px;
+                            }
+
                             p {
                                 margin: 0;
                             }
@@ -325,10 +333,11 @@
                         font-size: 18px;
                         text-align: justify;
 
-                        @include range-width (320px, 769px) {
+                        @include range-width (320px, 768px) {
                             font-size: 16px;
                             text-align: center;
                         }
+
                     }
                 }
             }

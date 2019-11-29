@@ -10,11 +10,13 @@ body .main:before { background-image: url("../img/bg01.jpg"); background-repeat:
 @media screen and (max-width: 768px) and (min-width: 0) { body .main:before { background-repeat: repeat-x; background-size: 100% auto; height: 70px; position: fixed; top: 0; left: 0; width: 100%; z-index: 2; } }
 body .main:after { background-image: url("../img/bg02.jpg"); background-repeat: repeat-y; background-size: 100% auto; content: ""; height: 100%; position: absolute; top: 0; right: 0; width: 8.33333%; z-index: -1; }
 @media screen and (max-width: 768px) and (min-width: 0) { body .main:after { background-repeat: repeat-x; background-size: 130px auto; height: 15px; position: fixed; top: 70px; width: 100%; z-index: 2; } }
-body .main .menu { flex-basis: 16.66667%; width: 100%; }
+body .main .menu { flex-basis: 16.66667%; width: 16.66667%; }
 body .main .menu .web-menu { width: 16.66667%; left: 0; right: 0; position: fixed; text-align: center; }
 @media screen and (max-width: 768px) and (min-width: 0) { body .main .menu .web-menu { display: none; } }
 body .main .menu .web-menu .logo { margin-top: 40px; margin-bottom: 60px; }
 body .main .menu .web-menu .nav-list { margin: 0 auto; padding: 0 15%; }
+@media screen and (max-width: 1439px) and (min-width: 1025px) { body .main .menu .web-menu .nav-list { padding: 10%; font-size: 14px; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { body .main .menu .web-menu .nav-list { padding: 2%; font-size: 14px; } }
 body .main .menu .web-menu .nav-list ul { padding: 0; list-style: none; }
 body .main .menu .web-menu .nav-list ul li { position: relative; margin: 20px 0; background-color: #f0f0f0; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
 body .main .menu .web-menu .nav-list ul li.active a { color: #60381d; }
@@ -25,7 +27,7 @@ body .main .menu .web-menu .nav-list ul li a .menu-icon { width: 50px; height: 5
 body .main .menu .web-menu .nav-list ul li a .menu-icon i { color: #fff; font-size: 30px; }
 body .main .menu .web-menu .nav-list ul li a .menu-text { line-height: 50px; text-align: left; padding: 0 10px; }
 @media screen and (max-width: 768px) and (min-width: 0) { body .main .menu .web-menu { display: none; } }
-body .main .menu .mobile-menu { display: none; }
+body .main .menu .mobile-menu { display: none; width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 0) { body .main .menu .mobile-menu { position: fixed; top: 0; left: 0; display: inline-block; width: 100%; z-index: 3; }
   body .main .menu .mobile-menu .header { width: 100%; display: flex; justify-content: space-between; position: relative; }
   body .main .menu .mobile-menu .header .menu-icon-btn { background-color: #21282f; height: 40px; margin-top: 15px; margin-right: 10px; position: relative; width: 40px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
@@ -65,8 +67,8 @@ body .main .menu .mobile-menu { display: none; }
   body .main .menu .mobile-menu .header #menuToggle .mobile-menu-items #menu li { padding: 10px 0; font-size: 22px; }
   body .main .menu .mobile-menu .header .nav-list { display: none; }
   body .main .menu .mobile-menu .header .nav-list.active { display: block; position: relative; } }
-body .main .container { flex-basis: 75%; margin-right: 8.33333%; }
-@media screen and (max-width: 768px) and (min-width: 0) { body .main .container { margin-top: 85px; margin-right: 0; } }
+body .main .container { flex-basis: calc(100% - (9/12) + 0px); margin-right: 8.33333%; width: 75%; }
+@media screen and (max-width: 768px) and (min-width: 0) { body .main .container { width: 100%; margin-top: 85px; margin-right: 0; } }
 body .top-btn { background-color: #20282f; display: none; height: 40px; width: 40px; position: fixed; right: calc((100% * (1/12)) + 10px); bottom: 10px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 @media screen and (max-width: 375px) and (min-width: 320px) { body .top-btn { right: 10px; bottom: 10px; } }
 body .top-btn i { color: #ffffff; font-size: 20px; position: absolute; top: calc(50% - 10px); left: calc(50% - 10px); }

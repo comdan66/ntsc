@@ -5,7 +5,7 @@
     position: relative;
     padding: 0 60px;
 
-    @include range-width (320px, 768px) {
+    @include range-width (320px, 769px) {
         padding: 0 15px;
     }
     
@@ -93,6 +93,11 @@
                     border-radius: 20px;
                     position: absolute;
                     left: 20%;
+
+                    @include range-width (415px, 769px) {
+                        left: 10%;
+                        width: 80%;
+                    }
                 }
     
                 &:before {
@@ -105,10 +110,8 @@
                     border-bottom: 4px solid #cc9564;
                 }
 
-
                 li {
                     font-size: 26px;
-                    // padding: 0 10px;
 
                     &:after {
                         content: "|";
@@ -212,20 +215,34 @@
                     top: 355px;
                     z-index: 1;
 
-                @include range-width (320px, 768px) {
+                @include range-width (415px, 769px) {
+                    position: absolute;
+                        top: 260px;
+                        right: 40px;
+                        bottom: unset;
+                }
+
+                @include range-width (376px, 415px) {
+                    position: absolute;
+                        top: 130px;
+                        right: 40px;
+                        bottom: unset;
+                    width: 37px;
+                }
+
+                @include range-width (320px, 376px) {
                     position: absolute;
                         top: 105px;
                         right: 40px;
                         bottom: unset;
-
                     width: 37px;
+                }
 
-                    img {
-                        width: auto;
-                        height: auto;
-                        max-width: 100%;
-                        max-height: 100%;
-                    }
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
             }
 
@@ -264,14 +281,24 @@
                     .icon-chevron-right {
                         right: 0;
                     }
-    
-                    img {
-                        width: 100%;
-                        // width: auto;
-                        // height: auto;
-                        // max-width: 100%;
-                        // max-height: 100%;
+                    
+                    .slider-img {
+                        display: none;
+                        
+                        &.active {
+                            display: block;
+                        }
+                        img {
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 100%;
+
+                            @include border-radius(20px);
+                        }
+                            
                     }
+                    
                 }
 
                 .nanzhuang-text {
@@ -291,7 +318,6 @@
 
     .special {
         position: relative;
-        // padding: 30px 0;
 
         .special-title {
 
@@ -347,27 +373,30 @@
                     }
                     .special-main-img {
                         width: 100%;
-
                         img {
                             width: auto;
                             height: auto;
                             max-width: 100%;
                             max-height: 100%;
+                            @include border-radius(20px);
                         }
                     }
 
                     .special-sub-img {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: flex-start;
                         padding: 20px 0;
 
-                        & > div {
+                        .special-sub {
                             flex-basis: calc(25% - 5px);
                             padding: 5px;
 
                             img {
-                                width: 100%;
+                                width: auto;
                                 height: auto;
+                                max-width: 100%;
+                                max-height: 100%;
+                                @include border-radius(20px);
                             }
 
                             &:hover {
@@ -379,7 +408,13 @@
                                 border: 5px solid #ce9565;
                                 @include border-radius(10px);
                             }
+
+                            &:nth-child(2) {
+                                margin: 0 10px;
+                            }
                         }
+
+                        
                     }
                 }
 

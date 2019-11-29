@@ -4,26 +4,29 @@
 #wasami {
     position: relative;
 
-    @include range-width (320px, 768px) {
+    @include range-width (320px, 769px) {
         padding-bottom: 60px;
     }
 
     .wasami-title {
         color: #0f1820;;
         display: inline-block;
-        // padding-left: 20px;
         position: absolute;
             left: 50%;
             top: 75px;
         text-align: left;
 
+        @include range-width (769px, 1441px) {
+            padding-left: 20px;
+        }
 
-        @include range-width (320px, 768px) {
+        @include range-width (320px, 769px) {
             margin: 0 auto;
             padding: 30px 15px;
             position: relative;
                 top: unset;
                 left: unset;
+            text-align: center;
             width: 100%;
         }
 
@@ -46,6 +49,13 @@
                     top: 40px;
                     left: 0;
                 width: 68px;
+
+                @include range-width (415px, 769px) {
+                    margin: 5px 0;
+                    position: absolute;
+                        top: 40px;
+                        left: calc(50% - 34px);
+                }
 
                 @include range-width (320px, 768px) {
                     margin: 5px 0;
@@ -72,10 +82,6 @@
                 text-align: center;
             }
         }
-
-        .diamond {
-            @include diamond-left;
-        }
     }
 
     .wasami-img {
@@ -89,26 +95,41 @@
 
         .wasami-img-flex {
             flex: 1;
+
+            @include range-width (769px, 1441px) {
+                align-self: center;
+            }
             
             .wasami-img-box {
                 text-align: left;
                 max-width: 440px;
+
                 @include range-width (1441px, 0) {
                     text-align:center;
                     margin: 0 auto;
                 }
 
+                @include range-width (415px, 769px) {
+                    margin: 0 auto;
+                }
+
                 img {
-                    width: 100%;
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
             }
 
             .wasami-img-text {
                 flex-basis: 50%;
                 flex-grow: 0;
-                // padding-left: 20px;
                 padding-top: 100px;
 
+                @include range-width (769px, 1441px) {
+                    
+                    padding-left: 20px;
+                }
                 @include range-width (320px, 769px) {
                     margin-left: 0;
                     padding: 0;
@@ -128,15 +149,6 @@
                     }
 
                 }
-                // padding-left: 5px;
-    
-                // .text {
-                //     font-size: 16px;
-                //     font-weight: 300;
-                //     text-align: left;
-                //     line-height: 25px;
-                //     color: #0f1820;
-                // }
             }
         }
     }
@@ -168,7 +180,7 @@
             right: 120px;
             @include border-radius(50%); 
     
-            @include range-width (320px, 768px) {
+            @include range-width (320px, 769px) {
                 width: 30px;
                 height: 30px;
                 background-color: #cc9564;
@@ -187,7 +199,7 @@
             right: 165px;
             @include border-radius(50%); 
     
-            @include range-width (320px, 768px) {
+            @include range-width (320px, 769px) {
                 width: 15px;
                 height: 15px;
                 background-color: #f5edde;

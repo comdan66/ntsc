@@ -3,25 +3,24 @@
 #dream { position: relative; }
 #dream .blueprint { position: relative; }
 #dream .blueprint .blueprint-title { color: #0f1820; display: inline-block; padding-left: 55px; position: absolute; left: 50%; top: 100px; text-align: left; }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-title { padding: 30px 15px; position: relative; top: 0; left: 0; width: 100%; } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-title { padding: 30px 15px; position: relative; top: 0; left: 0; width: 100%; } }
 #dream .blueprint .blueprint-title h2 { font-size: 30px; margin: 0; position: relative; }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-title h2 { font-size: 24px; text-align: center; } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-title h2 { font-size: 24px; text-align: center; } }
 #dream .blueprint .blueprint-title h2:after { content: ""; background-image: url("../img/diamond.png"); height: 13px; margin: 5px auto; position: absolute; top: 40px; left: 0; width: 68px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-title h2:after { margin: 5px 0; position: absolute; top: 30px; left: calc(50% - 34px); } }
 #dream .blueprint .blueprint-title h2 span { color: #db0f2b; }
 #dream .blueprint .blueprint-title h6 { color: #383f46; font-size: 13px; font-weight: normal; margin: 0; padding-top: 20px; }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-title h6 { text-align: center; } }
-#dream .blueprint .blueprint-title .diamond { margin: 5px 0; width: 68px; }
-#dream .blueprint .blueprint-title .diamond img { width: 100%; }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-title h6 { text-align: center; } }
 #dream .blueprint .blueprint-img { display: flex; padding: 60px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-img { flex-direction: column; padding: 0 15px; } }
 #dream .blueprint .blueprint-img .blueprint-img-flex { flex: 1; position: relative; }
 #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-box { flex-basis: 50%; margin: 0 auto; max-width: 500px; max-height: 700px; position: relative; }
-#dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-box img { width: 100%; height: auto; }
+#dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-box img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
 #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-stick { overflow: hidden; position: absolute; left: 0; top: 30%; z-index: 1; transition: all 0.6s cubic-bezier(0, 0, 0, 1); }
 #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-stick img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
 @media screen and (min-width: 1441px) { #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-stick { position: absolute; left: 60px; } }
-@media screen and (max-width: 375px) and (min-width: 320px) { #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-stick { position: absolute; top: 70%; } }
+@media screen and (max-width: 768px) and (min-width: 416px) { #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-stick { position: absolute; left: calc(50% - 250px); } }
+@media screen and (max-width: 414px) and (min-width: 320px) { #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-stick { position: absolute; top: 70%; } }
 #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-text { flex-basis: 50%; flex-grow: 0; margin-left: 15px; padding-left: 40px; padding-top: 120px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-text { margin-left: 0; padding: 0; } }
 #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-text .text { color: #0f1820; font-size: 18px; line-height: 30px; text-align: justify; text-justify: initial; }
@@ -29,10 +28,22 @@
 #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-text .text h3 { font-size: 24px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-img .blueprint-img-flex .blueprint-text .text h3 { font-size: 18px; } }
 #dream .blueprint .blueprint-cards { position: relative; padding: 30px 30px 0 60px; }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards { padding: 30px 15px; } }
-#dream .blueprint .blueprint-cards .blueprint-cards-list { display: flex; justify-content: space-between; }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-cards { padding: 30px 15px; } }
+#dream .blueprint .blueprint-cards .blueprint-cards-list { display: flex; justify-content: space-between; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+@media screen and (max-width: 768px) and (min-width: 415px) { #dream .blueprint .blueprint-cards .blueprint-cards-list { flex-wrap: wrap-reverse; justify-content: space-around; } }
 @media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list { flex-direction: column-reverse; } }
-#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item { flex-basis: calc(25% - 20px); max-width: 280px; position: relative; padding: 20px; opacity: 0; background-color: #ffffff; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item { flex-basis: calc(25% - 20px); max-width: 280px; position: relative; padding: 20px; opacity: 0; background-color: #ffffff; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+@media screen and (max-width: 768px) and (min-width: 415px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item { flex-basis: calc(50% - 20px); padding: 20px; margin: 20px 0; } }
+@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item { padding: 30px 10px; margin: 0 auto; margin-bottom: 20px; width: 200px; } }
+#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(2) { top: -50px; }
+@media screen and (min-width: 1441px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(2) { top: -70px; } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(2) { top: 0; } }
+#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(3) { top: -100px; }
+@media screen and (min-width: 1441px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(3) { top: -140px; } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(3) { top: 0; } }
+#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(4) { top: -150px; }
+@media screen and (min-width: 1441px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(4) { top: -210px; } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(4) { top: 0; } }
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item.fade-in { animation-name: fadein; animation-duration: 1s; animation-fill-mode: forwards; }
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item.fade-in:nth-child(1) { animation-delay: 1.5s; }
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item.fade-in:nth-child(2) { animation-delay: 1s; }
@@ -43,16 +54,6 @@
   to { opacity: 1; } }
 @keyframes fadein { from { opacity: 0; }
   to { opacity: 1; } }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item { padding: 30px 10px; margin: 0 auto; margin-bottom: 20px; width: 200px; } }
-#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(2) { top: -50px; }
-@media screen and (min-width: 1441px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(2) { top: -70px; } }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(2) { top: 0; } }
-#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(3) { top: -100px; }
-@media screen and (min-width: 1441px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(3) { top: -140px; } }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(3) { top: 0; } }
-#dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(4) { top: -150px; }
-@media screen and (min-width: 1441px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(4) { top: -210px; } }
-@media screen and (max-width: 767px) and (min-width: 320px) { #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item:nth-child(4) { top: 0; } }
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item .blueprint-cards-item-icon { width: 100px; height: 100px; margin: 0 auto; font-size: 40px; color: #934512; border: 5px solid #f5e7cd; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item .blueprint-cards-item-icon i { position: relative; top: calc(50% - 20px); }
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item .blueprint-cards-item-title { color: #934512; font-size: 24px; position: relative; padding: 30px 0; }
@@ -60,7 +61,7 @@
 #dream .blueprint .blueprint-cards .blueprint-cards-list .blueprint-cards-item .blueprint-cards-item-text { font-size: 20px; text-align: justify; }
 #dream .blueprint .sec_skew_r { position: absolute; top: 105px; left: 0; width: 100%; height: 86%; background-color: #f5edde; z-index: -1; transform: skewY(-10deg); transform-origin: right top; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .blueprint .sec_skew_r { top: 10px; height: 100%; } }
-#dream .process { padding: 0 30px 0 60px; position: relative; }
+#dream .process { position: relative; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process { padding: 0 15px; } }
 #dream .process .title .dream-art-img03 { display: flex; flex-direction: column; align-items: center; position: relative; }
 #dream .process .title .dream-art-img03 img { max-width: 15px; height: auto; }
@@ -73,50 +74,70 @@
 #dream .process .text { font-size: 18px; line-height: 30px; margin: 0 auto; max-width: 630px; padding: 10px 15px; text-align: center; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .text { font-size: 14px; line-height: 20px; padding: 0; text-align: left; } }
 #dream .process .text p { margin: 0; }
-#dream .process .process-box .first { display: flex; justify-content: space-between; padding-top: 40px; position: relative; }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first { flex-wrap: wrap; } }
-#dream .process .process-box .first .first-flex { flex-basis: 25%; max-width: 200px; display: flex; position: relative; }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex { flex-basis: calc(50% - 25px); max-width: 160px; } }
+#dream .process .process-box .first { display: flex; justify-content: center; padding-top: 40px; position: relative; }
+@media screen and (max-width: 767px) and (min-width: 320px) { #dream .process .process-box .first { flex-wrap: wrap; } }
+#dream .process .process-box .first .first-flex { max-width: 200px; display: flex; position: relative; opacity: 0; }
+@media screen and (min-width: 769px) { #dream .process .process-box .first .first-flex { margin: 20px; } }
+@media screen and (max-width: 768px) and (min-width: 376px) { #dream .process .process-box .first .first-flex { margin: 12px; } }
+@media screen and (max-width: 375px) and (min-width: 320px) { #dream .process .process-box .first .first-flex { margin: 10px; } }
 #dream .process .process-box .first .first-flex:after { color: #e39f5b; content: "\e91c"; font-family: "icon"; font-size: 40px; position: absolute; top: calc(50% - 20px); left: calc(100%); }
-@media screen and (min-width: 1441px) { #dream .process .process-box .first .first-flex:after { position: absolute; top: calc(50% - 20px); left: calc(100% + 70px); } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:after { font-size: 24px; max-width: 160px; padding-bottom: 40px; position: absolute; top: calc(50% - 32px); left: calc(100% + 3px); } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(2) { padding-bottom: 40px; } }
-@media screen and (max-width: 375px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(2):after { color: #e39f5b; content: "\e91a"; font-family: "icon"; position: absolute; top: calc(100% - 30px); left: calc(50% - 18px); } }
-@media screen and (max-width: 768px) and (min-width: 376px) { #dream .process .process-box .first .first-flex:nth-child(2):after { color: #e39f5b; content: "\e91c"; font-family: "icon"; position: absolute; top: calc(50% - 32px); left: calc(100% + 3px); } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(3) { order: 3; } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(3):after { content: none; } }
-#dream .process .process-box .first .first-flex:nth-child(3) .icon { padding-top: 20px; }
+@media screen and (max-width: 768px) and (min-width: 376px) { #dream .process .process-box .first .first-flex:after { font-size: 24px; max-width: 160px; padding-bottom: 40px; position: absolute; top: calc(50% - 12px); } }
+@media screen and (max-width: 375px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:after { font-size: 20px; max-width: 160px; padding-bottom: 40px; position: absolute; top: calc(50% - 20px); } }
+@media screen and (max-width: 767px) and (min-width: 376px) { #dream .process .process-box .first .first-flex:nth-child(2):after { color: #e39f5b; content: "\e91a"; font-family: "icon"; position: absolute; top: calc(100%); left: calc(50% - 12px); } }
+@media screen and (max-width: 375px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(2):after { color: #e39f5b; content: "\e91a"; font-family: "icon"; position: absolute; top: calc(100%); left: calc(50% - 10px); } }
+@media screen and (max-width: 767px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(3) { order: 3; } }
+@media screen and (max-width: 767px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:nth-child(3):after { content: none; } }
 #dream .process .process-box .first .first-flex:last-child:after { content: none; }
-@media screen and (max-width: 375px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:last-child:after { color: #e39f5b; content: "\e91a"; font-family: "icon"; position: absolute; top: calc(50% - 12px); left: calc(100% + 3px); } }
-@media screen and (max-width: 768px) and (min-width: 375px) { #dream .process .process-box .first .first-flex:last-child:after { color: #e39f5b; content: "\e91c"; font-family: "icon"; position: absolute; top: calc(50% - 32px); left: calc(100% + 3px); } }
-#dream .process .process-box .first .first-flex .icon { position: relative; width: 180px; height: 180px; border: 10px solid #f5e7cd; color: #934612; padding: 30px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex .icon { width: 130px; height: 130px; padding: 20px; } }
+@media screen and (max-width: 767px) and (min-width: 376px) { #dream .process .process-box .first .first-flex:last-child:after { color: #e39f5b; content: "\e91b"; font-family: "icon"; position: absolute; top: calc(50% - 12px); left: 100%; } }
+@media screen and (max-width: 375px) and (min-width: 320px) { #dream .process .process-box .first .first-flex:last-child:after { color: #e39f5b; content: "\e91b"; font-family: "icon"; position: absolute; top: calc(50% - 10px); left: 100%; } }
+#dream .process .process-box .first .first-flex.fade-in { animation-name: fadein; animation-duration: 1s; animation-fill-mode: forwards; }
+#dream .process .process-box .first .first-flex.fade-in:nth-child(2) { animation-delay: 1s; }
+#dream .process .process-box .first .first-flex.fade-in:nth-child(3) { animation-delay: 2s; }
+#dream .process .process-box .first .first-flex.fade-in:nth-child(4) { animation-delay: 3s; }
+@-webkit-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@-moz-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+#dream .process .process-box .first .first-flex .icon { position: relative; width: 200px; height: 200px; border: 10px solid #f5e7cd; color: #934612; padding: 30px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+@media screen and (max-width: 1440px) and (min-width: 769px) { #dream .process .process-box .first .first-flex .icon { width: 150px; height: 150px; padding: 10px; } }
+@media screen and (max-width: 768px) and (min-width: 376px) { #dream .process .process-box .first .first-flex .icon { width: 150px; height: 150px; padding: 30px; } }
+@media screen and (max-width: 375px) and (min-width: 321px) { #dream .process .process-box .first .first-flex .icon { width: 140px; height: 140px; padding: 20px; } }
+@media screen and (max-width: 320px) and (min-width: 0) { #dream .process .process-box .first .first-flex .icon { width: 120px; height: 120px; padding: 10px; } }
 #dream .process .process-box .first .first-flex .icon i { font-size: 65px; }
 #dream .process .process-box .first .first-flex .icon i:before { margin-top: 10px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex .icon i { font-size: 40px; } }
 #dream .process .process-box .first .first-flex .icon .icon-text { font-size: 18px; }
+@media screen and (max-width: 1440px) and (min-width: 769px) { #dream .process .process-box .first .first-flex .icon .icon-text { font-size: 16px; } }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .first .first-flex .icon .icon-text { font-size: 14px; } }
 #dream .process .process-box .first .first-flex .icon .icon-text p { margin: 0; }
-#dream .process .process-box .second { padding-top: 60px; padding-right: 20px; position: relative; }
+#dream .process .process-box .second { padding-top: 60px; position: relative; }
 @media screen and (min-width: 1441px) { #dream .process .process-box .second { padding-right: 0; } }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .second { padding-top: 30px; padding-right: 0; } }
-#dream .process .process-box .second:before { color: #cc4356; content: "\e91a"; font-family: "icon"; font-size: 40px; position: absolute; top: 0; left: calc(50% - 30px); }
-@media screen and (min-width: 1441px) { #dream .process .process-box .second:before { position: absolute; top: 0; left: calc(50% - 20px); } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .second:before { font-size: 24px; position: absolute; top: 0; left: calc(50% - 12px); } }
-#dream .process .process-box .second .second-flex { border: 5px solid #de8d98; margin: 0 auto; max-width: 220px; max-height: 220px; padding: 5px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+#dream .process .process-box .second .second-flex { border: 5px solid #de8d98; margin: 0 auto; max-width: 220px; max-height: 220px; opacity: 0; padding: 5px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+#dream .process .process-box .second .second-flex:before { color: #cc4356; content: "\e91a"; font-family: "icon"; font-size: 40px; position: absolute; top: 0; left: calc(50% - 20px); }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .second .second-flex:before { font-size: 24px; position: absolute; top: 0; left: calc(50% - 12px); } }
 #dream .process .process-box .second .second-flex .icon { position: relative; width: 200px; height: 200px; border: 10px solid #cc4356; color: #934612; margin: 0 auto; padding: 40px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 #dream .process .process-box .second .second-flex .icon i { font-size: 65px; }
 #dream .process .process-box .second .second-flex .icon i:before { margin-top: 10px; }
 #dream .process .process-box .second .second-flex .icon .icon-text { font-size: 18px; }
 #dream .process .process-box .second .second-flex .icon .icon-text p { margin: 0; }
+#dream .process .process-box .second .second-flex.fade-in { animation-name: fadein; animation-duration: 1s; animation-delay: 4s; animation-fill-mode: forwards; }
+@-webkit-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@-moz-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
 #dream .process .process-box .third { display: flex; justify-content: space-evenly; padding-top: 40px; position: relative; }
-#dream .process .process-box .third:before { color: #e39f5b; content: "\e918"; font-family: "icon"; font-size: 40px; position: absolute; top: 0; left: calc(35%); }
-@media screen and (min-width: 1441px) { #dream .process .process-box .third:before { position: absolute; top: 0; left: calc(40% - 20px); } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .third:before { font-size: 24px; content: "\e91a"; position: absolute; top: 0; left: calc(25% - 12px); } }
-#dream .process .process-box .third:after { color: #e39f5b; content: "\e919"; font-family: "icon"; font-size: 40px; position: absolute; top: 0; right: calc(35%); }
-@media screen and (min-width: 1441px) { #dream .process .process-box .third:after { position: absolute; top: 0; right: calc(40% - 20px); } }
-@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .third:after { font-size: 24px; content: "\e91a"; position: absolute; top: 0; right: calc(25% - 12px); } }
-#dream .process .process-box .third .third-flex { flex-basis: 50%; }
+#dream .process .process-box .third .third-flex { flex-basis: 50%; opacity: 0; }
+#dream .process .process-box .third .third-flex:nth-child(1):before { color: #e39f5b; content: "\e918"; font-family: "icon"; font-size: 40px; position: absolute; top: 0; left: calc(35%); }
+@media screen and (min-width: 1441px) { #dream .process .process-box .third .third-flex:nth-child(1):before { position: absolute; top: 0; left: calc(40% - 20px); } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .third .third-flex:nth-child(1):before { font-size: 24px; content: "\e91a"; position: absolute; top: 0; left: calc(25% - 12px); } }
+#dream .process .process-box .third .third-flex:nth-child(2):after { color: #e39f5b; content: "\e919"; font-family: "icon"; font-size: 40px; position: absolute; top: 0; right: calc(35%); }
+@media screen and (min-width: 1441px) { #dream .process .process-box .third .third-flex:nth-child(2):after { position: absolute; top: 0; right: calc(40% - 20px); } }
+@media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .third .third-flex:nth-child(2):after { font-size: 24px; content: "\e91a"; position: absolute; top: 0; right: calc(25% - 12px); } }
 #dream .process .process-box .third .third-flex:nth-child(2) .icon { padding-top: 30px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .third .third-flex:nth-child(2) .icon { padding-top: 10px; } }
 #dream .process .process-box .third .third-flex .icon { position: relative; width: 200px; height: 200px; border: 10px solid #cc9564; color: #934612; margin: 0 auto; padding: 40px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
@@ -127,3 +148,10 @@
 #dream .process .process-box .third .third-flex .icon .icon-text { font-size: 18px; }
 @media screen and (max-width: 768px) and (min-width: 320px) { #dream .process .process-box .third .third-flex .icon .icon-text { font-size: 14px; } }
 #dream .process .process-box .third .third-flex .icon .icon-text p { margin: 0; }
+#dream .process .process-box .third .third-flex.fade-in { animation-name: fadein; animation-duration: 1s; animation-delay: 5s; animation-fill-mode: forwards; }
+@-webkit-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@-moz-keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
