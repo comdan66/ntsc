@@ -118,6 +118,11 @@
                     height: auto;
                     max-width: 100%;
                     max-height: 100%;
+
+                    @include range-width (769px) {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
 
